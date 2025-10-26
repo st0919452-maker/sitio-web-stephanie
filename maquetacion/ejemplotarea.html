@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos</title>
+    <link rel="stylesheet" href="ejemplotarea.css">
+</head>
+<body>
+    <div class="contenedor">
+    <header class="grisc borderR" style="padding: 1em;">
+        <h1 style="color: #e75480; font-size: 2.5em;">Sitios Web Ejemplos</h1>
+        <p style="font-size: 1.2em;">Explora diferentes tipos de sitios implementados en Internet</p>
+    </header>
+
+
+        <main>
+            <nav class="aqua borderR posicion marginInf"> <tr><td><a href="imagenes/img3.jpg" target="contenido">Inicio</a></td></tr>
+                <pre></pre>
+                <table>
+    <tr><td><a href="https://www.harvard.edu" target="contenido">Harvard University (Educativo)</a></td></tr>
+
+    <tr><td><a href="https://www.aliexpress.com" target="contenido">AliExpress (Comercio)</a></td></tr>
+    <tr><td><a href="https://thirtysecondstomars.com" target="contenido">30 Seconds to Mars (Artístico)</a></td></tr>
+    <tr><td><a href="https://eldeber.com.bo" target="contenido">EL DEBER (Informativo)</a></td></tr>
+    <tr><td><a href="https://www.cns.gob.bo" target="contenido">Caja Nacional de Salud (Bolivia)</a></td></tr>
+
+    <tr><td><a href="https://www.gutenberg.org" target="contenido">Project Gutenberg (Biblioteca)</a></td></tr>
+    <tr><td><a href="https://viajes.nationalgeographic.com.es" target="contenido">National Geographic Viajes (Turismo)</a></td></tr>
+
+    <tr><td><a href="https://www.disneyplus.com/es-419" target="contenido">Disney+ (Entretenimiento)</a></td></tr>
+
+    <tr><td><a href="https://www.microsoft.com" target="contenido">Microsoft (Corporativo)</a></td></tr>
+</table>
+
+            </nav>
+
+            <section class="grisO posicion marginInf">
+                <img id="imagenInicial" src="imagenes/img3.jpg" alt="" width="780" height="900">
+                <iframe name="contenido" id="iframeContenido" class="borderR grisc marginInf" width="950" height="950" style="display: none;"></iframe>
+            </section>
+        </main>
+
+        <footer class="grisO borderR">
+            <pre>footer</pre>
+        </footer>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('nav a');
+        const imagen = document.getElementById('imagenInicial');
+        const iframe = document.getElementById('iframeContenido');
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                imagen.style.display = 'none';
+                iframe.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
