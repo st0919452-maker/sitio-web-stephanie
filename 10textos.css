@@ -1,0 +1,21 @@
+html{
+	font-size:20px
+}
+.th1{
+	font-size:4em;
+}
+.span-th1{
+	color: pink;
+	font-size:2em;
+
+}
+
+
+.th2{
+	font-size:4em;
+}
+.span-th2{
+	color: violet;
+	font-size:4rem;
+
+}
